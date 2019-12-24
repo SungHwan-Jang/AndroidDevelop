@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UpdateFirmwareDemo</string>
+
+    <string name="update_firmware">Update Firmware</string>
+
+    <string name="text_default_file_name">Firmware File</string>
+
+    <string name="app_copyright">Copyright © Synaptics Systems, Inc.</string>
+
+    <string name="firmware_status">Status: </string>
+
+    <string name="app_version"> V1.0.78.0  </string>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HowToCommunicateViaSerialConnection</string>
+    <string name="on">ON</string>
+    <string name="connect">connect</string>
+    <string name="off">off</string>
+    <string name="disconnect">disconnect</string>
+</resources>

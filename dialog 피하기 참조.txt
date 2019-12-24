@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/13726583/bypass-android-usb-host-permission-confirmation-dialog
