@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--부모와의 관계 설정 방법 ( 레이아웃이 배치한 버튼의 부모가 된다)-->
+<!--    layout_align... 속성을 활용하여 배치한다.-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Button" />
+
+    <!--    centerHorizontal 등의 속성들 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+    <!--    layout_alignBottom 다른 뷰와의 관계 설정 현재 버튼의 하단면을 button2의 하단면과 맞춘다.-->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button2"
+        android:text="Button" />
+
+    <!--    layout_toLeftOf 다른 뷰와의 관계설정 현재 버튼을 button2의 왼쪽면에 위치하게 한다.-->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/button2"
+        android:layout_alignTop="@id/button2"
+        android:text="Button" />
+
+</RelativeLayout>

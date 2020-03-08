@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.hwanproj.helloworld">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <!-- 각각 해당 activity의 메인을 MainActivity로 지정 (MainActivity.java)-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--실행시 이곳 intent-filter의 "android.intent.action.MAIN" 를 찾아낸다.-->
+                <!--안드로이드가 알고있는 이름을 붙일 경우엔, 특정 상황에서 해당 activity가 작동된다.-->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

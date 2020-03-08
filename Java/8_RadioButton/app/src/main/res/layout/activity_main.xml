@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"></TextView>
+
+    <RadioGroup
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="radio1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radio2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radio3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="radio2_1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radio2_2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="radio2_3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioCheck"
+        android:onClick="btn1Method"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="find check"
+        android:onClick="btn2Method">
+    </Button>
+
+</LinearLayout>
