@@ -8,22 +8,15 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:srcCompat="@mipmap/ic_launcher" />
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ListView
+        android:id="@+id/list1"
         android:layout_width="match_parent"
-        android:layout_height="156dp"
-        app:srcCompat="@drawable/antopen" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+        android:layout_height="match_parent" />
 </LinearLayout>
