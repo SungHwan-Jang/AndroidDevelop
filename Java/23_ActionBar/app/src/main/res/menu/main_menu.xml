@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item5"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="menu5"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.widget.SearchView"/>
+<!--    collapseActionView 할당 시 접히고 펴는 동작이 가능하다.
+        actionViewClass에 view를 할당한다.-->
+    <item
+        android:id="@+id/item1"
+        android:title="menu1" />
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="menu2"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item3"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="menu3"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/item4"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="menu4"
+        app:showAsAction="ifRoom" />
+
+    <!--
+        always - 아이콘 표시
+        withText - 가로 배치시 아이콘 + 텍스트
+        ifRoom - 가로 배치시 아이콘 표시
+        -->
+</menu>
