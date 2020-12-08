@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1_HelloWorld.iml" filepath="$PROJECT_DIR$/.idea/modules/1_HelloWorld.iml" group="1_HelloWorld" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/1_HelloWorld-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/1_HelloWorld-app.iml" group="1_HelloWorld/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1_manifest_lifetime-1_HelloWorld.iml" filepath="$PROJECT_DIR$/.idea/modules/1_manifest_lifetime-1_HelloWorld.iml" group="1_HelloWorld" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="1_HelloWorld/app" />
     </modules>
   </component>

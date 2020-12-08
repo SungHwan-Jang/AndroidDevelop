@@ -10,6 +10,14 @@ import android.util.Log;
 // Service - Background worker
 // Broadcast Receiver - event
 // Content Provider - data region
+
+// 실행 - onCreate() -> onStart() -> onResume()
+// 뒤로가기(정지) - onPause() -> onStop() -> onDestroy()
+// 백그라운드 불러오기 - onRestart() -> onStart() -> onResume()
+// 백그라운드화 - onPause() -> onStop()
+
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

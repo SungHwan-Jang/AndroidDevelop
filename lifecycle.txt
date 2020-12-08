@@ -1,0 +1,10 @@
+// 안드로이드의 4대 구성요소
+// Activity - UI Form 현재 보이는 화면을 관리하는 실행 단위
+// Service - Background worker
+// Broadcast Receiver - event
+// Content Provider - data region
+
+// 실행 - onCreate() -> onStart() -> onResume()
+// 뒤로가기(정지) - onPause() -> onStop() -> onDestroy()
+// 백그라운드 불러오기 - onRestart() -> onStart() -> onResume()
+// 백그라운드화 - onPause() -> onStop()
