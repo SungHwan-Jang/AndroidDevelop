@@ -70,9 +70,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    // 현재 액티비티의 수행이 완전히 종료되어 메모리 상에서 제거될 때 호줄
+     // 현재 액티비티의 수행이 완전히 종료되어 메모리 상에서 제거될 때 호줄
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("test","Call onDestroy()");
+        Log.d("test", "Call onDestroy()");
     }
 }

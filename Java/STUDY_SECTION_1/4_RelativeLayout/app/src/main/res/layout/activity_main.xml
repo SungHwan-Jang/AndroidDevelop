@@ -17,7 +17,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="Button" />
+        android:text="Button1" />
 
     <!--    centerHorizontal 등의 속성들 -->
     <Button
@@ -26,14 +26,14 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
-        android:text="Button" />
+        android:text="Button2" />
     <!--    layout_alignBottom 다른 뷰와의 관계 설정 현재 버튼의 하단면을 button2의 하단면과 맞춘다.-->
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/button2"
-        android:text="Button" />
+        android:text="Button3" />
 
     <!--    layout_toLeftOf 다른 뷰와의 관계설정 현재 버튼을 button2의 왼쪽면에 위치하게 한다.-->
     <Button
@@ -42,6 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@id/button2"
         android:layout_alignTop="@id/button2"
-        android:text="Button" />
+        android:text="Button4" />
 
 </RelativeLayout>
