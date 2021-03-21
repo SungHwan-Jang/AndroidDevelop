@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/second_text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finish"
+        android:id="@+id/second_button"
+        android:onClick="btn_method"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:id="@+id/second_button2"
+        android:onClick="btn_method2"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="first_user"
+        android:id="@+id/second_button3"
+        android:onClick="btn_method3"
+        />
+
+
+</LinearLayout>
