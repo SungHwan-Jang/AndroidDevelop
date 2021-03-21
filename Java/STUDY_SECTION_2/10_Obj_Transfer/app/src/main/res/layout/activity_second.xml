@@ -4,26 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".SecondActivity"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/text_view1"
+        android:id="@+id/second_text_view1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
-    <TextView
-        android:id="@+id/text_view2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="act2"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="run second activity"
+        android:text="back"
         android:onClick="btn_method"/>
-
 
 </LinearLayout>
