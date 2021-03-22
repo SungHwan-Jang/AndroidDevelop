@@ -14,6 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView textView = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,16 +22,13 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.text_view1);
     }
 
-    public void btn_method(View view){
+    public void btn_method(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
-
         TestClass t1 = new TestClass();
         t1.data10 = 100;
         t1.data20 = "string1";
-
         // TestClass가 가지고 있는 writeToParcel() 메서드 호출출
-       intent.putExtra("test1", t1);
-
+        intent.putExtra("test1", t1);
         startActivityForResult(intent, 0);
     }
 
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(resultCode == RESULT_OK){
+        if (resultCode == RESULT_OK) {
             TestClass tRet = data.getParcelableExtra("test2");
             textView.setText("tRet 10: " + tRet.data10 + "tRet 10: " + tRet.data20);
         }
