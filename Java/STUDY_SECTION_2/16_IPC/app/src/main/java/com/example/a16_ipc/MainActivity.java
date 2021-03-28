@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,17 +84,4 @@ public class MainActivity extends AppCompatActivity {
         int val = ipcService.get_value();
         textView.setText("val : " + val);
     }
-
-    // 서비스 접속 관리를 하는 클래스
-//    class ConnectionClass implements ServiceConnection{
-//        @Override
-//        public void onServiceConnected(ComponentName name, IBinder service) {
-//
-//        }
-//
-//        @Override
-//        public void onServiceDisconnected(ComponentName name) {
-//
-//        }
-//    }
 }
