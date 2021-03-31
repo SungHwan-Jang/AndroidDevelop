@@ -3,13 +3,16 @@ package com.example.a21_file_io;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -49,11 +52,34 @@ public class MainActivity extends AppCompatActivity {
         check_permisson();
 
         // 저장할 외부 저장소의 경로를 구한다.
-        File file = Environment.getExternalStorageDirectory();
+        if(Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED){
+            Toast toast =  Toast.makeText(this,"ok", Toast.LENGTH_LONG);
+            toast.show();
+        }
+        // 아래와 같이 외부 저장소 이용하자.
+//        public void writeFile() {
+//            String fileTitle = "title.txt";
+//            File file = new File(Environment.getExternalStorageDirectory(), fileTitle);
+//
+//            try {
+//                if (!file.exists()) {
+//                    file.createNewFile();
+//                }
+//                FileWriter writer = new FileWriter(file, false);
+//                String str = "      저장할 내용      ";
+//                writer.write(str);
+//                writer.close();
+//            } catch (IOException e) {
+//
+//            }
+//        }
+//        File file = Environment.getExternalStorageDirectory();  // Deprecated
+        File file = new File(this.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS), "test");
         String absoluteDirPath = file.getAbsolutePath();
-        String packageName = getPackageName();
+        //String packageName = getPackageName();
+        path = absoluteDirPath;
 
-        path = absoluteDirPath + "/android/data/" + packageName + "/";
+        //path = absoluteDirPath + "/android/data/" + packageName + "/";
     }
 
     public void btn_method_1(View view){
@@ -136,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void check_permisson(){
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+        if(Build.VERSION.SDK_INT <= Build.VERSION_CODES.M){
             return;
         }
 
@@ -150,12 +176,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // 저장공간에 대한 access 는 denied 된것같다.. 이후 한번 더 확인 필
+    // **************************************************************
+    // android 버전업으로 인한 영향인건지... 기존 getExternal.. 은 Deprecated 되었다.
     private void check_externel_dir(){
         // 외부 저장소 경로가 있는지 확인하고 없으면 생성한다.
         File file = new File(path);
 
         if(!file.exists()){
-            file.mkdir();
+            if(!file.mkdir()){
+                Log.d("test", "dir not created");
+            }
         }
 
     }
