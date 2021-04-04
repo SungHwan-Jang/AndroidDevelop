@@ -4,25 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/main_text_view_1"
+
+    <Button
+        android:onClick="btn_method_save"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="main text" />
+        android:text="save content to app1" />
 
     <Button
         android:onClick="btn_method_select"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="get data" />
+        android:text="select content frm app1" />
 
     <Button
+        android:onClick="btn_method_update"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="update content to app1" />
+
+    <Button
+        android:onClick="btn_method_delete"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete content from app1" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,16 +46,10 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/scr_textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="scroll_text"
-                android:id="@+id/scroll_text_view_1"
-                />
-
+                android:text="TextView" />
         </LinearLayout>
-
-
     </ScrollView>
-
-
 </LinearLayout>
